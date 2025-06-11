@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+
+    <title>Sants-Coder</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <nav>
+            <ul class="lista" id="menu_lateral">
+                <li>
+                    <a href="#inicio">Home</a>
+                </li>
+                <li>
+                    <a href="#sobre">About</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#projetos">Projects</a>
+                </li>
+                <li>
+                    <a href="#contatos">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--botão de alterar tematica
+
+         <button id="tematica" class="tematica_botao">
+           <img id="icone_tematica" src="img/moon-solid-24.png" alt="modo claro">
+         </button>
+        -->
+
+        <button class="hamburguer" id="menu-toggle">
+            <img src="img/hamburguer.png" alt="Menu">
+        </button>
+    </header>
+
+    <section id="inicio" class="perfil">
+        <img src="img/my_profile_photo.jpg" alt="Foto de perfil" class="foto-perfil">
+        <h1 class="nome">SANTS CODER</h1>
+        <p class="descricao"></p>
+    </section>
+
+    <section id="sobre" class="sobre">
+        <h2 class="titulo_sobre">ABOUT ME</h2>
+        <p class="descricao_sobre">    Front-End Developer — curioso por tudo que envolve o lado visual, artístico e interativo da web. Movido por design e código, busco sempre traduzir ideias em experiências digitais únicas, com estilo próprio, atenção aos detalhes e foco na estética funcional. Gosto de criar interfaces modernas, que expressem identidade e tragam fluidez à navegação. Estou em constante evolução, estudando, testando e refinando meu olhar criativo para entregar soluções que conectam pessoas e tecnologia de forma autêntica.</p>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2 class="titulo_skills">Skills</h2>
+        <div class="container_skills">
+
+            <div class="skill-block html">
+                <img src="img/icons/html5-skills.png" alt="HTML Icon">
+                <p class="skill-label">HTML5</p>
+            </div>
+
+            <div class="skill-block css">
+                <img src="img/icons/css3-skills.png" alt="CSS Icon">
+                <p class="skill-label">CSS3</p>
+            </div>
+
+            <div class="skill-block js">
+                <img src="img/icons/javascript-skills.png" alt="JavaScript Icon">
+                <p class="skill-label">JavaScript</p>
+            </div>
+
+            <div class="skill-block nodejs">
+                <img src="img/icons/nodejs-skills.png" alt="NodeJs Icon">
+                <p class="skill-label">Node.Js</p>
+            </div>
+
+            <div class="skill-block react">
+                <img src="img/icons/react-skills.png" alt="React Icon">
+                <p class="skill-label">React</p>
+            </div>
+
+            <div class="skill-block tailwind">
+                <img src="img/icons/tailwind-skills.png" alt="Tailwindcss Icon">
+                <p class="skill-label">Tailwind</p>
+            </div>
+
+            <div class="skill-block figma">
+                <img src="img/icons/figma-skills.png" alt="Figma Icon">
+                <p class="skill-label">Figma</p>
+            </div>
+
+            <div class="skill-block github">
+                <img src="img/icons/github-skills.png" alt="GitHub Icon">
+                <p class="skill-label">GitHub</p>
+            </div>
+
+            <div class="skill-block vercel">
+                <img src="img/icons/vercel-skills.png" alt="Vercel Icon">
+                <p class="skill-label">Vercel</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2 class="titulo_projetos">PROJECTS</h2>
+        <div class="container_projetos">
+            <div class="projeto">
+                <a href="https://guia-bully.vercel.app/" target="_blank">
+                    <img src="img/bully_game.jpg" alt="Bully">
+                    <h3>BULLY</h3>
+                    <p>"Desenvolvi um site inspirado em Bully, clássico da Rockstar Games que marcou gerações com sua
+                        abordagem única sobre a vida escolar. O site mergulha no universo de Bullworth Academy,
+                        explorando os personagens, enredos, facções, missões e toda a atmosfera que tornou o jogo tão
+                        envolvente. A proposta é oferecer aos fãs uma imersão nostálgica e aprofundada, celebrando o
+                        impacto duradouro de Bully no mundo dos games."</p>
+                </a>
+            </div>
+            <div class="projeto">
+                <a href="https://2pac-tribute-website.vercel.app/" target="_blank">
+                    <img src="img/2pac_imagem.jpg" alt="2Pac">
+                    <h3>2PAC</h3>
+                    <p>"Criei um site dedicado à vida e legado de Tupac Shakur (2Pac), um dos maiores ícones da música e
+                        da cultura. O site apresenta uma visão completa de sua carreira, discografia, letras de músicas,
+                        e impacto social, buscando homenagear sua arte e sua contribuição para a música e a sociedade."
+                    </p>
+                </a>
+            </div>
+            <div class="projeto">
+                <a href="https://jump-sky-game-site.vercel.app/" target="_blank">
+                    <img src="img/jump_sky.jpeg" alt="JUMP SKY">
+                    <h3>FIRST PROJECT</h3>
+                    <p>"Meu primeiro site desenvolvido durante a faculdade de Jogos Digitais pela Fiap, feito para
+                        apresentar o jogo "Jump Sky", onde comecei a explorar o mundo do Front-End."</p>
+                </a>
+            </div>
+            <div class="projeto">
+                <a href="https://dashboard-bancario-pos.vercel.app/" target="_blank">
+                    <img src="img/desktop_servicos.png" alt="JUMP SKY">
+                    <h3>FIAP PROJECT</h3>
+                    <p>"A seção <strong>"Meus Cartões"</strong> foi desenvolvida como parte do projeto de pós-graduação
+                        na FIAP, com foco em uma aplicação de gerenciamento financeiro. Nessa tela, implementei a
+                        exibição dinâmica de cartões físicos e digitais, com botões interativos para ações como
+                        configurar, bloquear e desbloquear cartões. Utilizei <strong>Next.js</strong> com
+                        <strong>Tailwind CSS</strong> para garantir responsividade, tema escuro e uma estrutura moderna
+                        baseada em componentes reutilizáveis. A interface também inclui modais com lógica de
+                        confirmação, proporcionando uma experiência de usuário fluida e intuitiva."
+                    </p>
+                </a>
+            </div>
+             <div class="projeto">
+                <a href="em breve" target="_blank">
+                    <img src="img/tobirama.jpg" alt="Tobirama">
+                    <h3>Tobirama</h3>
+                    <p> Um tributo ao lendário Tobirama Senju — o Segundo Hokage de Konoha. Mestre da razão, estratégia e poder bruto, ele foi o responsável por criar técnicas revolucionárias como o Edo Tensei e o Hiraishin. Muito além de um shinobi comum, Tobirama moldou os alicerces do mundo ninja moderno com sua visão implacável e mente afiada. Esse site irá explorar seu legado, sua história e sua influência até os dias atuais</p>
+                </a>
+            </div>
+             <div class="projeto">
+                <a href="em breve" target="_blank">
+                    <img src="img/hokages.jpeg" alt="Four Hokages">
+                    <h3>Hokages</h3>
+                    <p> Um tributo visual aos lendários quatro Hokages. Força, legado e honra reunidos em um site dedicado aos maiores protetores de Konoha.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contatos" class="contatos">
+        <h2 class="titulo_contatos">CONTACT ME</h2>
+        <div class="contatos_links">
+            <div class="github">
+                <a href="https://github.com/Sants-Coder" target="_blank">GITHUB
+                    <img src="img/github-logo-24.png" data-nome="github" alt="GitHub">
+                </a>
+            </div>
+            <div class="whatsapp">
+                <a href="https://wa.me/5511940154926?text=Olá!%20Gostaria%20de%20mais%20informações."
+                    target="_blank">WHATSAPP
+                    <img src="img/whatsapp-logo-24.png" data-nome="whatsapp" alt="Whatsapp">
+                </a>
+            </div>
+            <div class="gmail">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ha701430@gmail.com" target="_blank">GMAIL
+                    <img src="img/gmail-logo-24.png" data-nome="gmail" alt="Gmail">
+                </a>
+            </div>
+            <div class="instagram">
+                <a href="https://www.instagram.com/santscoder/" target="_blank">INSTAGRAM
+                    <img src="img/instagram-logo-24.png" data-nome="instagram" alt="Instagram">
+                </a>
+            </div>
+            <div class="linkedin">
+                <a href="https://www.linkedin.com/in/henrique-aguiar-269b89233/" target="_blank">LINKEDIN
+                    <img src="img/linkedin-logo-24.png" data-nome="linkedin" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer class="rodape">
+        <div class="footer_container">
+            <h3 class="big_name">HENRIQUE</h3>
+            <div class="footer_navigate">
+                <h3>NAVIGATE</h3>
+                <ul class="navigate_list">
+                    <li>
+                        <a href="#inicio">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#sobre">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="#projetos">PROJECTS</a>
+                    </li>
+                    <li>
+                        <a href="#contatos">CONTACTS</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer_folow">
+                <h3>FOLOW</h3>
+                <ul class="folow_list">
+                    <li>
+                        <a href="https://www.instagram.com/santscoder/" target="_blank">INSTAGRAM</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/henrique-aguiar-269b89233/" target="_blank">LINKEDIN</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Sants-Coder" target="_blank">GITHUB</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer_contact">
+                <h3>CONTACT</h3>
+                <ul class="contact_list">
+                    <li>
+                        <a href="#contatos">GET STARTED</a>
+                    </li>
+                    <li>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ha701430@gmail.com&su=Assunto%20aqui&body=Escreva%20sua%20mensagem%20aqui"
+                            target="_blank">ha701430@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer_direitos">
+                <p>CREATE WITH PASSION. INSPIRE WITH ART.</p>
+                <p>NO SHORTCUTS. JUST DEDICATION</p>
+                <p>© 2025, MADE BY HENRIQUE A</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const textElement = document.querySelector(".descricao");
+            const text = "Desenvolvedor Front-End";
+            let index = 0;
+
+            function type() {
+                if (index < text.length) {
+                    textElement.textContent += text[index];
+                    index++;
+                    setTimeout(type, 100);
+                }
+            }
+            type();
+        });
+
+        /*
+       (script de alteranar tematica)
+
+        const botao = document.getElementById('tematica');
+        const icone = document.getElementById('icone_tematica');
+        const body = document.body;
+
+        botao.addEventListener('click', () => {
+            body.classList.toggle('light');
+
+            const modoAtivo = body.classList.contains('light');
+
+            icone.src = modoAtivo
+                ? 'img/sun-regular-24.png'
+                : 'img/moon-solid-24.png';
+            icone.alt = modoAtivo ? 'modo escuro' : 'modo claro';
+
+            const iconesContato = document.querySelectorAll(".contatos_links img");
+
+            iconesContato.forEach((img) => {
+                const nome = img.dataset.nome;
+                img.src = modoAtivo
+                    ? `img/${nome}-logo-24-black.png`
+                    : `img/${nome}-logo-24.png`;
+            });
+        });
+        */
+
+        const toggleMenu = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu_lateral');
+
+        toggleMenu.addEventListener('click', () => {
+            menu.classList.toggle('ativo');
+        });
+        document.querySelectorAll('#menu_lateral a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.remove('ativo');
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
