@@ -431,7 +431,7 @@ body {
 
 .big_name {
     text-align: center;
-    font-size: 152px;
+    font-size: 196px;
     font-family: var(--fonte_secundaria);
 
 }
@@ -492,7 +492,6 @@ ul {
     cursor: pointer;
     position: fixed;
     top: 15px;
-    /* abaixo do botão de tema */
     left: 20px;
     z-index: 1000;
 }
