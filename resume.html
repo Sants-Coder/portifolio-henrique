@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume — Henrique Aguiar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Boldonse&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --preto: #121212;
+            --branco: #FAFAFA;
+            --branco-puro: #FFFFFF;
+            --cinza-claro: #E0E0E0;
+            --cinza-medio: #A0A0A0;
+            --cinza-superescuro: #1F1F1F;
+            --roxo: #6f26af;
+
+            --fonte-principal: 'Poppins', sans-serif;
+            --fonte-secundaria: 'Boldonse', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--preto);
+            color: var(--cinza-claro);
+            font-family: var(--fonte-principal);
+            line-height: 1.7;
+            padding: 80px 20px;
+        }
+
+        .resume-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        .resume-header h1 {
+            font-family: var(--fonte-secundaria);
+            color: var(--branco-puro);
+            letter-spacing: 2px;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .resume-header p {
+            font-size: 14px;
+            color: var(--cinza-medio);
+        }
+
+        .resume-links {
+            margin-top: 10px;
+        }
+
+        .resume-links a {
+            color: var(--roxo);
+            text-decoration: none;
+            font-weight: 500;
+            margin-right: 10px;
+        }
+
+        .resume-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Sections */
+        section {
+            margin-top: 50px;
+        }
+
+        h2 {
+            font-size: 18px;
+            color: var(--roxo);
+            margin-bottom: 15px;
+            border-bottom: 1px solid var(--cinza-superescuro);
+            padding-bottom: 6px;
+            letter-spacing: 1px;
+        }
+
+        p,
+        li {
+            font-size: 15px;
+            color: var(--cinza-claro);
+        }
+
+        ul {
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        ul li {
+            margin-bottom: 12px;
+        }
+
+        strong {
+            color: var(--branco);
+        }
+
+        em {
+            color: var(--cinza-medio);
+            font-style: italic;
+        }
+
+        /* Actions */
+        .resume-actions {
+            display: flex;
+            gap: 15px;
+            margin-top: 60px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 22px;
+            border-radius: 6px;
+            font-size: 14px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .btn.primary {
+            background-color: var(--roxo);
+            color: var(--branco-puro);
+        }
+
+        .btn.primary:hover {
+            opacity: 0.85;
+        }
+
+        .btn.ghost {
+            border: 1px solid var(--cinza-superescuro);
+            color: var(--cinza-claro);
+        }
+
+        .btn.ghost:hover {
+            border-color: var(--roxo);
+            color: var(--roxo);
+        }
+
+        /* Footer note */
+        .resume-footer {
+            margin-top: 80px;
+            font-size: 13px;
+            color: var(--cinza-medio);
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="resume-container">
+
+        <header class="resume-header">
+            <h1>Henrique Aguiar dos Santos</h1>
+            <p>
+                22 anos (25/08/2003) • São Paulo – SP, Brasil<br>
+                📞 +55 11 94015-4926 | ✉️ <a href="mailto:ha701430@gmail.com">ha701430@gmail.com</a>
+            </p>
+
+            <div class="resume-links">
+                <a href="https://github.com/Sants-Coder" target="_blank">GitHub</a> |
+                <a href="https://portifolio-henrique.vercel.app/" target="_blank">Portfólio</a> |
+                <a href="https://www.linkedin.com/in/henrique-aguiar-269b89233/" target="_blank">LinkedIn</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>Resumo Profissional</h2>
+            <p>
+                Desenvolvedor Front-End com formação em Jogos Digitais pela FIAP e cursando Pós-Graduação em Front-End
+                Engineering. Experiência em desenvolvimento web e mobile com React, Next.js, Tailwind CSS e React
+                Native.
+                Atuação em projetos acadêmicos e pessoais com foco em experiência do usuário, acessibilidade e
+                desempenho.
+                Perfil analítico, autodidata e comprometido com boas práticas e evolução constante.
+            </p>
+        </section>
+
+        <section>
+            <h2>Formação Acadêmica</h2>
+            <ul>
+                <li>
+                    <strong>Pós-Graduação em Front-End Engineering</strong><br>
+                    FIAP | 2025 (em andamento)
+                </li>
+                <li>
+                    <strong>Tecnólogo em Jogos Digitais</strong><br>
+                    FIAP | 2022 – 2024
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Habilidades Técnicas</h2>
+            <ul>
+                <li><strong>Front-End:</strong> HTML, CSS, JavaScript, React.js, Next.js, React Native</li>
+                <li><strong>Estilização & Design:</strong> Tailwind CSS, Figma, UX/UI Design, Prototipagem</li>
+                <li><strong>Ferramentas:</strong> Git, GitHub, Vercel, Firebase</li>
+                <li><strong>Outros:</strong> Node.js (básico), Photoshop, Edição de vídeo, Modelagem 3D (Maya)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Projetos Relevantes</h2>
+            <ul>
+                <li>
+                    <strong>Tech Challenge – Aplicativo Mobile (2025)</strong><br>
+                    Desenvolvimento de um aplicativo de <em>gerenciamento financeiro</em> utilizando React Native,
+                    Expo e Firebase.<br>
+                    • Implementação completa do fluxo de autenticação.<br>
+                    • Rotas protegidas e controle de acesso.<br>
+                    • Boas práticas de segurança e usabilidade.<br>
+                    <em>FIAP – Pós Front-End Engineering</em>
+                </li>
+
+                <li>
+                    <strong>Dashboard Bancária – Web App (2025)</strong><br>
+                    Interface responsiva desenvolvida com Next.js e Tailwind CSS.<br>
+                    • Componentização e foco em acessibilidade.<br>
+                    <em>FIAP – Pós Front-End Engineering</em>
+                </li>
+
+                <li>
+                    <strong>Why Not? – Web App Motivacional (2025)</strong><br>
+                    Projeto da Imersão Alura + Google.<br>
+                    • Aplicação interativa com temas e animações.<br>
+                    • HTML, CSS e JavaScript com estrutura modular.<br>
+                    <em>Imersão Alura + Google</em>
+                </li>
+
+                <li>
+                    <strong>Design System + Firebase – Aplicação Financeira (2025)</strong><br>
+                    • Criação de Design System e arquitetura Front-End.<br>
+                    • Firebase Authentication e Firestore.<br>
+                    • Expo Router, Context API e animações.<br>
+                    <em>FIAP – Pós Front-End Engineering</em>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Idiomas</h2>
+            <ul>
+                <li>Português – Nativo</li>
+                <li>Inglês – Intermediário (leitura técnica e conversação básica)</li>
+            </ul>
+        </section>
+
+        <div class="resume-actions">
+            <a href="pdf/resume-henriqueaguiar.pdf" download class="btn primary">
+                Download PDF
+            </a>
+            <a href="index.html" class="btn ghost">← Voltar ao Portfólio</a>
+        </div>
+
+        <div class="resume-footer">
+            <p>This resume is also available as a PDF version.</p>
+        </div>
+
+
+    </main>
+
+</body>
+
+</html>
