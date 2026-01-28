@@ -5,18 +5,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume — Henrique Aguiar</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Boldonse&display=swap"
         rel="stylesheet">
 
     <style>
         :root {
-            --preto: #121212;
-            --branco: #FAFAFA;
-            --branco-puro: #FFFFFF;
-            --cinza-claro: #E0E0E0;
-            --cinza-medio: #A0A0A0;
-            --cinza-superescuro: #1F1F1F;
-            --roxo: #6f26af;
+            --preto: #0e0e0e;
+            --branco: #fafafa;
+            --cinza-claro: #d4d4d4;
+            --cinza-medio: #9a9a9a;
+            --cinza-escuro: #1c1c1c;
+            --vermelho: #ff0000;
 
             --fonte-principal: 'Poppins', sans-serif;
             --fonte-secundaria: 'Boldonse', sans-serif;
@@ -32,238 +32,274 @@
             background-color: var(--preto);
             color: var(--cinza-claro);
             font-family: var(--fonte-principal);
-            line-height: 1.7;
-            padding: 80px 20px;
+            line-height: 1.8;
+            padding: 120px 20px;
         }
 
-        .resume-container {
-            max-width: 900px;
+        main {
+            max-width: 880px;
             margin: 0 auto;
         }
 
-        /* Header */
-        .resume-header h1 {
-            font-family: var(--fonte-secundaria);
-            color: var(--branco-puro);
-            letter-spacing: 2px;
-            font-size: 32px;
-            margin-bottom: 10px;
+        /* ===========================
+           HEADER
+        =========================== */
+
+        .resume-header {
+            margin-bottom: 90px;
         }
 
-        .resume-header p {
+        .resume-header h1 {
+            font-family: var(--fonte-secundaria);
+            font-size: 36px;
+            color: var(--branco);
+            letter-spacing: 2px;
+        }
+
+        .resume-header span {
+            display: block;
+            margin-top: 12px;
+            font-size: 14px;
+            letter-spacing: 2px;
+            color: var(--cinza-medio);
+        }
+
+        .resume-meta {
+            margin-top: 20px;
             font-size: 14px;
             color: var(--cinza-medio);
         }
 
         .resume-links {
-            margin-top: 10px;
+            margin-top: 26px;
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
         }
 
         .resume-links a {
-            color: var(--roxo);
             text-decoration: none;
-            font-weight: 500;
-            margin-right: 10px;
+            font-size: 13px;
+            letter-spacing: 1px;
+            color: var(--vermelho);
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s ease;
         }
 
         .resume-links a:hover {
-            text-decoration: underline;
+            border-color: var(--vermelho);
         }
 
-        /* Sections */
+        /* ===========================
+           SECTIONS
+        =========================== */
+
         section {
-            margin-top: 50px;
+            margin-bottom: 70px;
         }
 
-        h2 {
-            font-size: 18px;
-            color: var(--roxo);
-            margin-bottom: 15px;
-            border-bottom: 1px solid var(--cinza-superescuro);
-            padding-bottom: 6px;
-            letter-spacing: 1px;
+        section h2 {
+            font-size: 14px;
+            letter-spacing: 3px;
+            color: var(--vermelho);
+            margin-bottom: 24px;
         }
 
-        p,
-        li {
+        section p {
             font-size: 15px;
-            color: var(--cinza-claro);
+            max-width: 720px;
         }
 
         ul {
             list-style: none;
-            margin-top: 10px;
+            margin-top: 20px;
         }
 
         ul li {
-            margin-bottom: 12px;
+            margin-bottom: 22px;
+            font-size: 15px;
         }
 
         strong {
             color: var(--branco);
+            font-weight: 500;
         }
 
         em {
             color: var(--cinza-medio);
-            font-style: italic;
+            font-style: normal;
+            font-size: 13px;
         }
 
-        /* Actions */
+        /* ===========================
+           PROJECT BLOCK
+        =========================== */
+
+        .project {
+            padding-left: 18px;
+            border-left: 2px solid var(--cinza-escuro);
+        }
+
+        /* ===========================
+           ACTIONS
+        =========================== */
+
         .resume-actions {
             display: flex;
-            gap: 15px;
-            margin-top: 60px;
+            gap: 16px;
+            margin-top: 80px;
             flex-wrap: wrap;
         }
 
         .btn {
-            padding: 12px 22px;
-            border-radius: 6px;
-            font-size: 14px;
+            padding: 14px 26px;
+            font-size: 13px;
+            letter-spacing: 1px;
+            border-radius: 8px;
             text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .btn.primary {
-            background-color: var(--roxo);
-            color: var(--branco-puro);
+            background: linear-gradient(135deg, #ff1a1a, #b80000);
+            color: #fff;
         }
 
         .btn.primary:hover {
-            opacity: 0.85;
+            transform: translateY(-4px);
+            box-shadow: 0 20px 50px rgba(255, 26, 26, 0.4);
         }
 
         .btn.ghost {
-            border: 1px solid var(--cinza-superescuro);
+            border: 1px solid var(--cinza-escuro);
             color: var(--cinza-claro);
         }
 
         .btn.ghost:hover {
-            border-color: var(--roxo);
-            color: var(--roxo);
+            border-color: var(--vermelho);
+            color: var(--vermelho);
         }
 
-        /* Footer note */
+        /* ===========================
+           FOOTER
+        =========================== */
+
         .resume-footer {
-            margin-top: 80px;
-            font-size: 13px;
+            margin-top: 100px;
+            font-size: 12px;
+            letter-spacing: 1px;
             color: var(--cinza-medio);
+        }
+
+        /* ===========================
+           RESPONSIVE
+        =========================== */
+
+        @media (max-width: 600px) {
+            body {
+                padding: 80px 20px;
+            }
+
+            .resume-header h1 {
+                font-size: 28px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <main class="resume-container">
+    <main>
 
         <header class="resume-header">
-            <h1>Henrique Aguiar dos Santos</h1>
-            <p>
-                22 anos (25/08/2003) • São Paulo – SP, Brasil<br>
-                📞 +55 11 94015-4926 | ✉️ <a href="mailto:ha701430@gmail.com">ha701430@gmail.com</a>
-            </p>
+            <h1>HENRIQUE AGUIAR</h1>
+            <span>FRONT-END DEVELOPER</span>
+
+            <div class="resume-meta">
+                22 years • São Paulo, Brazil<br>
+                📞 +55 11 94015-4926 • ✉️ ha701430@gmail.com
+            </div>
 
             <div class="resume-links">
-                <a href="https://github.com/Sants-Coder" target="_blank">GitHub</a> |
-                <a href="https://portifolio-henrique.vercel.app/" target="_blank">Portfólio</a> |
-                <a href="https://www.linkedin.com/in/henrique-aguiar-269b89233/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Sants-Coder" target="_blank">GITHUB</a>
+                <a href="https://portifolio-henrique.vercel.app/" target="_blank">PORTFOLIO</a>
+                <a href="https://www.linkedin.com/in/henrique-aguiar-269b89233/" target="_blank">LINKEDIN</a>
             </div>
         </header>
 
         <section>
-            <h2>Resumo Profissional</h2>
+            <h2>PROFILE</h2>
             <p>
-                Desenvolvedor Front-End com formação em Jogos Digitais pela FIAP e cursando Pós-Graduação em Front-End
-                Engineering. Experiência em desenvolvimento web e mobile com React, Next.js, Tailwind CSS e React
-                Native.
-                Atuação em projetos acadêmicos e pessoais com foco em experiência do usuário, acessibilidade e
-                desempenho.
-                Perfil analítico, autodidata e comprometido com boas práticas e evolução constante.
+                Front-End Developer with a background in Digital Games and a Postgraduate degree in Front-End
+                Engineering.
+                Focused on building expressive, accessible and performance-oriented interfaces.
+                Strong visual sense, analytical thinking and continuous improvement mindset.
             </p>
         </section>
 
         <section>
-            <h2>Formação Acadêmica</h2>
+            <h2>EDUCATION</h2>
             <ul>
                 <li>
-                    <strong>Pós-Graduação em Front-End Engineering</strong><br>
-                    FIAP | 2025 (em andamento)
+                    <strong>Postgraduate — Front-End Engineering</strong><br>
+                    FIAP • 2025 (ongoing)
                 </li>
                 <li>
-                    <strong>Tecnólogo em Jogos Digitais</strong><br>
-                    FIAP | 2022 – 2024
+                    <strong>Technologist — Digital Games</strong><br>
+                    FIAP • 2022 – 2024
                 </li>
             </ul>
         </section>
 
         <section>
-            <h2>Habilidades Técnicas</h2>
+            <h2>SKILLS</h2>
             <ul>
-                <li><strong>Front-End:</strong> HTML, CSS, JavaScript, React.js, Next.js, React Native</li>
-                <li><strong>Estilização & Design:</strong> Tailwind CSS, Figma, UX/UI Design, Prototipagem</li>
-                <li><strong>Ferramentas:</strong> Git, GitHub, Vercel, Firebase</li>
-                <li><strong>Outros:</strong> Node.js (básico), Photoshop, Edição de vídeo, Modelagem 3D (Maya)</li>
+                <li><strong>Front-End:</strong> HTML, CSS, JavaScript, React, Next.js, React Native</li>
+                <li><strong>Design:</strong> Tailwind CSS, Figma, UI/UX, Prototyping</li>
+                <li><strong>Tools:</strong> Git, GitHub, Vercel, Firebase</li>
+                <li><strong>Other:</strong> Node.js (basic), Photoshop, Video Editing, 3D (Maya)</li>
             </ul>
         </section>
 
         <section>
-            <h2>Projetos Relevantes</h2>
+            <h2>SELECTED PROJECTS</h2>
             <ul>
-                <li>
-                    <strong>Tech Challenge – Aplicativo Mobile (2025)</strong><br>
-                    Desenvolvimento de um aplicativo de <em>gerenciamento financeiro</em> utilizando React Native,
-                    Expo e Firebase.<br>
-                    • Implementação completa do fluxo de autenticação.<br>
-                    • Rotas protegidas e controle de acesso.<br>
-                    • Boas práticas de segurança e usabilidade.<br>
-                    <em>FIAP – Pós Front-End Engineering</em>
+                <li class="project">
+                    <strong>Financial App — Mobile</strong><br>
+                    React Native, Expo, Firebase<br>
+                    <em>Authentication, protected routes, UX and security</em>
                 </li>
 
-                <li>
-                    <strong>Dashboard Bancária – Web App (2025)</strong><br>
-                    Interface responsiva desenvolvida com Next.js e Tailwind CSS.<br>
-                    • Componentização e foco em acessibilidade.<br>
-                    <em>FIAP – Pós Front-End Engineering</em>
+                <li class="project">
+                    <strong>Banking Dashboard — Web</strong><br>
+                    Next.js, Tailwind CSS<br>
+                    <em>Component-based architecture and accessibility</em>
                 </li>
 
-                <li>
-                    <strong>Why Not? – Web App Motivacional (2025)</strong><br>
-                    Projeto da Imersão Alura + Google.<br>
-                    • Aplicação interativa com temas e animações.<br>
-                    • HTML, CSS e JavaScript com estrutura modular.<br>
-                    <em>Imersão Alura + Google</em>
-                </li>
-
-                <li>
-                    <strong>Design System + Firebase – Aplicação Financeira (2025)</strong><br>
-                    • Criação de Design System e arquitetura Front-End.<br>
-                    • Firebase Authentication e Firestore.<br>
-                    • Expo Router, Context API e animações.<br>
-                    <em>FIAP – Pós Front-End Engineering</em>
+                <li class="project">
+                    <strong>Why Not?</strong><br>
+                    HTML, CSS, JavaScript<br>
+                    <em>Interactive motivational experience</em>
                 </li>
             </ul>
         </section>
 
         <section>
-            <h2>Idiomas</h2>
+            <h2>LANGUAGES</h2>
             <ul>
-                <li>Português – Nativo</li>
-                <li>Inglês – Intermediário (leitura técnica e conversação básica)</li>
+                <li>Portuguese — Native</li>
+                <li>English — Intermediate</li>
             </ul>
         </section>
 
         <div class="resume-actions">
-            <a href="pdf/resume-henriqueaguiar.pdf" download class="btn primary">
-                Download PDF
-            </a>
-            <a href="index.html" class="btn ghost">← Voltar ao Portfólio</a>
+            <a href="pdf/Currículo — Henrique Aguiar dos Santos.pdf" class="btn primary" download>DOWNLOAD PDF</a>
+            <a href="index.html" class="btn ghost">← BACK TO PORTFOLIO</a>
         </div>
 
         <div class="resume-footer">
-            <p>This resume is also available as a PDF version.</p>
+            This resume is also available as a PDF version.
         </div>
-
 
     </main>
 

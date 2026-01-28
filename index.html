@@ -5,253 +5,251 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="img/favicon-logo.png" type="image/png" />
     <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
 
     <title>Sants-Coder</title>
 </head>
 
 <body>
-    <header class="cabecalho">
-        <nav>
-            <ul class="lista" id="menu_lateral">
-                <li>
-                    <a href="#inicio">Home</a>
-                </li>
-                <li>
-                    <a href="#sobre">About</a>
-                </li>
-                <li>
-                    <a href="#skills">Skills</a>
-                </li>
-                <li>
-                    <a href="#projetos">Projects</a>
-                </li>
-                <li>
-                    <a href="#teaching">Teaching</a>
-                </li>
-                <li>
-                    <a href="#contatos">Contact</a>
-                </li>
-                <li class="resume-link">
-                    <a href="resume.html">
-                        Resume
-                        <span class="arrow">↗</span>
-                    </a>
-                </li>
-            </ul>
+    <header class="header-brutal">
+
+        <div class="header-left">
+            <span class="header-logo">HENRIQUE</span>
+        </div>
+
+        <nav class="header-nav">
+            <a href="#inicio">HOME</a>
+            <a href="#sobre">ABOUT</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#projetos">PROJECTS</a>
+            <a href="#teaching">TEACHING</a>
+            <a href="#contatos">CONTACT</a>
+            <a href="resume.html" class="resume-link">RESUME <span>↗</span></a>
         </nav>
-        <!--botão de alterar tematica
 
-         <button id="tematica" class="tematica_botao">
-           <img id="icone_tematica" src="img/moon-solid-24.png" alt="modo claro">
-         </button>
-        -->
-
-        <button class="hamburguer" id="menu-toggle">
-            <img src="img/hamburguer.png" alt="Menu">
+        <button class="menu-trigger" id="menuTrigger">
+            MENU
         </button>
+
     </header>
 
-    <section id="inicio" class="perfil">
-        <img src="img/my_profile_photo.jpg" alt="Foto de perfil" class="foto-perfil">
-        <h1 class="nome">SANTS CODER</h1>
-        <p class="descricao"></p>
+    <!-- OVERLAY MOBILE -->
+    <div class="menu-overlay" id="menuOverlay">
+        <nav class="overlay-nav">
+            <a href="#inicio">HOME</a>
+            <a href="#sobre">ABOUT</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#projetos">PROJECTS</a>
+            <a href="#teaching">TEACHING</a>
+            <a href="#contatos">CONTACT</a>
+            <a href="resume.html">RESUME ↗</a>
+        </nav>
+    </div>
+
+
+    <section id="inicio" class="hero">
+        <div class="hero-inner">
+
+            <div class="hero-text">
+                <h1 class="hero-title">SANTS<br>CODER</h1>
+                <p class="hero-tagline">
+                    01 Front-End Developer & Visual Experiences
+                </p>
+            </div>
+
+            <div class="hero-portrait">
+                <div class="portrait-frame">
+                    <img src="img/my_profile_photo.jpg" alt="Sants Coder">
+                </div>
+            </div>
+
+        </div>
     </section>
 
-    <section id="sobre" class="sobre">
-        <h2 class="titulo_sobre">ABOUT ME</h2>
-        <p class="descricao_sobre">
-            Front-End Developer focado em experiências visuais, interfaces interativas
-            e identidade digital.
-            <br><br>
-            Trabalho na interseção entre design e código, buscando transformar ideias
-            em produtos claros, funcionais e com personalidade.
-        </p>
+    <section class="marquee-section">
+        <div class="marquee">
+            <div class="marquee-track">
+                <span>FRONT-END</span>
+                <span>VISUAL DESIGN</span>
+                <span>INTERACTIVE UI</span>
+                <span>CREATIVE CODE</span>
+                <span>EXPERIENCE</span>
+
+    
+                <span>FRONT-END</span>
+                <span>VISUAL DESIGN</span>
+                <span>INTERACTIVE UI</span>
+                <span>CREATIVE CODE</span>
+                <span>EXPERIENCE</span>
+            </div>
+        </div>
     </section>
 
 
-    <section id="skills" class="skills">
-        <h2 class="titulo_skills">Skills</h2>
-        <div class="container_skills">
 
-            <div class="skill-block html">
-                <img src="img/icons/html5-skills.png" alt="HTML Icon">
-                <p class="skill-label">HTML5</p>
+    <section id="sobre" class="about-section">
+        <div class="about-container">
+
+            <span class="about-eyebrow">02 ABOUT</span>
+
+            <h2 class="about-title">
+                I design experiences.<br>
+                I code identity.
+            </h2>
+
+            <p class="about-text">
+                Sou Front-End Developer focado em experiências visuais, interfaces interativas
+                e identidade digital.
+            </p>
+
+            <p class="about-text muted">
+                Trabalho na interseção entre design e código, buscando transformar ideias
+                em produtos claros, funcionais e com personalidade.
+            </p>
+
+        </div>
+    </section>
+
+    <section id="skills" class="skills-brutal">
+
+        <div class="skills-brutal-header">
+            <span class="skills-index">03</span>
+            <h2 class="skills-brutal-title">CORE STACK</h2>
+        </div>
+
+        <div class="skills-brutal-grid">
+
+            <div class="skill-brutal html">
+                <span>HTML5</span>
             </div>
 
-            <div class="skill-block css">
-                <img src="img/icons/css3-skills.png" alt="CSS Icon">
-                <p class="skill-label">CSS3</p>
+            <div class="skill-brutal css">
+                <span>CSS3</span>
             </div>
 
-            <div class="skill-block js">
-                <img src="img/icons/javascript-skills.png" alt="JavaScript Icon">
-                <p class="skill-label">JavaScript</p>
+            <div class="skill-brutal js">
+                <span>JAVASCRIPT</span>
             </div>
 
-            <div class="skill-block nodejs">
-                <img src="img/icons/nodejs-skills.png" alt="NodeJs Icon">
-                <p class="skill-label">Node.Js</p>
+            <div class="skill-brutal react">
+                <span>REACT</span>
             </div>
 
-            <div class="skill-block react">
-                <img src="img/icons/react-skills.png" alt="React Icon">
-                <p class="skill-label">React</p>
+            <div class="skill-brutal nodejs">
+                <span>NODE.JS</span>
             </div>
 
-            <div class="skill-block tailwind">
-                <img src="img/icons/tailwind-skills.png" alt="Tailwindcss Icon">
-                <p class="skill-label">Tailwind</p>
+            <div class="skill-brutal tailwind">
+                <span>TAILWIND</span>
             </div>
 
-            <div class="skill-block figma">
-                <img src="img/icons/figma-skills.png" alt="Figma Icon">
-                <p class="skill-label">Figma</p>
+            <div class="skill-brutal figma">
+                <span>FIGMA</span>
             </div>
 
-            <div class="skill-block github">
-                <img src="img/icons/github-skills.png" alt="GitHub Icon">
-                <p class="skill-label">GitHub</p>
+            <div class="skill-brutal github">
+                <span>GITHUB</span>
             </div>
 
-            <div class="skill-block vercel">
-                <img src="img/icons/vercel-skills.png" alt="Vercel Icon">
-                <p class="skill-label">Vercel</p>
+            <div class="skill-brutal vercel">
+                <span>VERCEL</span>
             </div>
 
         </div>
     </section>
 
     <section id="projetos" class="projetos">
-        <h2 class="titulo_projetos">PROJECTS</h2>
 
-        <div class="container_projetos">
+        <div class="projetos-wrapper">
 
-            <!-- Matuê -->
-            <div class="projeto destaque">
-                <a href="https://matue-immersive-experience.vercel.app/" target="_blank">
-                    <img src="img/matue.jpg" alt="Matuê Project">
-                    <h3>Matuê — Experiência Imersiva</h3>
-                    <p>
-                        Projeto experimental inspirado na obra e na estética de Matuê, um dos principais nomes do trap
-                        brasileiro.
-                        A proposta foi criar uma experiência imersiva que traduzisse identidade, ritmo e narrativa
-                        visual em interface,
-                        utilizando o Front-End como linguagem expressiva.
-                        <br><br>
-                        Mais do que apresentar conteúdo, o site constrói sensação e continuidade,
-                        explorando o código como meio de contar uma história visual.
-                    </p>
-                </a>
+            <div class="projetos-track">
+                <article class="projeto">
+                    <a href="https://matue-immersive-experience.vercel.app/" target="_blank" rel="noopener"
+                        class="projeto-link"></a>
+                    <img src="img/matue.jpg" alt="">
+                    <div class="projeto-texto">
+                        <span>01</span>
+                        <h3>Matuê</h3>
+                        <p>Experiência imersiva construída como narrativa visual.</p>
+                    </div>
+                </article>
+
+                <article class="projeto">
+                    <a href="https://why-not-kappa.vercel.app/" target="_blank" rel="noopener" class="projeto-link"></a>
+                    <img src="img/why-not.png" alt="">
+                    <div class="projeto-texto">
+                        <span>02</span>
+                        <h3>Why Not?</h3>
+                        <p>Interface como impacto, código como expressão.</p>
+                    </div>
+                </article>
+
+                <article class="projeto">
+                    <a href="https://invincible-color-web.vercel.app/" target="_blank" rel="noopener"
+                        class="projeto-link"></a>
+                    <img src="img/invencible.jpg" alt="">
+                    <div class="projeto-texto">
+                        <span>03</span>
+                        <h3>Invincible</h3>
+                        <p>UI reativa que muda atmosfera e identidade.</p>
+                    </div>
+                </article>
+
+                <article class="projeto">
+                    <a href="https://dashboard-bancario-pos.vercel.app/" target="_blank" rel="noopener"
+                        class="projeto-link"></a>
+                    <img src="img/desktop_servicos.png" alt="">
+                    <div class="projeto-texto">
+                        <span>04</span>
+                        <h3>Dashboard FIAP</h3>
+                        <p>Interface financeira moderna construída com foco em usabilidade.</p>
+                    </div>
+                </article>
+
+                <article class="projeto">
+                    <a href="https://guia-bully.vercel.app/" target="_blank" rel="noopener" class="projeto-link"></a>
+                    <img src="img/bully_game.jpg" alt="">
+                    <div class="projeto-texto">
+                        <span>05</span>
+                        <h3>BULLY</h3>
+                        <p>Tributo visual à narrativa de Bullworth Academy.</p>
+                    </div>
+                </article>
+
+                <article class="projeto">
+                    <a href="https://2pac-tribute-website.vercel.app/" target="_blank" rel="noopener"
+                        class="projeto-link"></a>
+                    <img src="img/2pac_imagem.jpg" alt="">
+                    <div class="projeto-texto">
+                        <span>06</span>
+                        <h3>2PAC</h3>
+                        <p>Legado, cultura e impacto social em experiência digital.</p>
+                    </div>
+                </article>
+
+                <article class="projeto">
+                    <a href="https://jump-sky-game-site.vercel.app/" target="_blank" rel="noopener"
+                        class="projeto-link"></a>
+                    <img src="img/jump_sky.jpeg" alt="">
+                    <div class="projeto-texto">
+                        <span>07</span>
+                        <h3>Jump Sky</h3>
+                        <p>O ponto zero. Onde tudo começou.</p>
+                    </div>
+                </article>
+
             </div>
-
-
-            <!-- WHY NOT -->
-            <div class="projeto destaque">
-                <a href="https://why-not-kappa.vercel.app/" target="_blank">
-                    <img src="img/why-not.png" alt="Why Not Project">
-                    <h3>Why Not?</h3>
-                    <p>
-                        Mais do que um site, uma experiência sensorial.
-                        Um projeto autoral criado para transformar motivação em interface e estética em propósito.
-                        Cada elemento visual foi pensado para provocar sentimento, reflexão e identidade.
-                        <br><br>
-                        Este projeto representa minha visão de Front-End como narrativa, impacto e expressão.
-                    </p>
-                </a>
-            </div>
-
-            <!-- INVINCIBLE -->
-            <div class="projeto destaque">
-                <a href="https://invincible-color-web.vercel.app/" target="_blank">
-                    <img src="img/invencible.jpg" alt="Invincible Color Web">
-                    <h3>Invincible — Color Web</h3>
-                    <p>
-                        Um experimento visual que evoluiu para uma experiência narrativa interativa.
-                        A interface reage às escolhas do usuário, alterando cores, atmosfera e identidade visual em
-                        tempo real.
-                        <br><br>
-                        Um projeto que explora como UI pode contar histórias e carregar significado.
-                    </p>
-                </a>
-            </div>
-
-            <!-- FIAP -->
-            <div class="projeto">
-                <a href="https://dashboard-bancario-pos.vercel.app/" target="_blank">
-                    <img src="img/desktop_servicos.png" alt="Dashboard Bancário">
-                    <h3>Dashboard Bancário — FIAP</h3>
-                    <p>
-                        Projeto desenvolvido na pós-graduação da FIAP com foco em aplicações financeiras.
-                        Interface moderna construída com Next.js e Tailwind CSS, utilizando componentes reutilizáveis,
-                        tema escuro e modais interativos.
-                        <br><br>
-                        Ênfase em usabilidade, organização visual e experiência do usuário.
-                    </p>
-                </a>
-            </div>
-
-            <!-- TATTOO -->
-            <div class="projeto">
-                <a href="https://yago-miranda-tattoo-website.vercel.app/" target="_blank">
-                    <img src="img/aesthetic-background.png" alt="Tattoo Website">
-                    <h3>Site para Tatuador — Yago Miranda</h3>
-                    <p>
-                        Site one-page responsivo desenvolvido para um cliente real.
-                        Foco em branding pessoal, estética dark minimalista e conversão.
-                        <br><br>
-                        Inclui menu mobile, FAQ, CTAs estratégicos e integrações com WhatsApp e Google Maps.
-                    </p>
-                </a>
-            </div>
-
-            <!-- BULLY -->
-            <div class="projeto">
-                <a href="https://guia-bully.vercel.app/" target="_blank">
-                    <img src="img/bully_game.jpg" alt="Bully Game Project">
-                    <h3>BULLY — Tribute Project</h3>
-                    <p>
-                        Projeto inspirado no clássico da Rockstar Games.
-                        Uma imersão visual no universo de Bullworth Academy, explorando personagens,
-                        facções e a atmosfera que marcou gerações.
-                        <br><br>
-                        Um tributo à narrativa e identidade cultural dos games.
-                    </p>
-                </a>
-            </div>
-
-            <!-- 2PAC -->
-            <div class="projeto">
-                <a href="https://2pac-tribute-website.vercel.app/" target="_blank">
-                    <img src="img/2pac_imagem.jpg" alt="2Pac Tribute">
-                    <h3>2PAC — Tribute Website</h3>
-                    <p>
-                        Site dedicado à vida e legado de Tupac Shakur.
-                        Um projeto focado em conteúdo, identidade cultural e impacto social,
-                        reunindo discografia, história e representatividade.
-                    </p>
-                </a>
-            </div>
-
-            <!-- FIRST PROJECT -->
-            <div class="projeto projeto-inicial">
-                <a href="https://jump-sky-game-site.vercel.app/" target="_blank">
-                    <img src="img/jump_sky.jpeg" alt="Jump Sky Game">
-                    <h3>First Project — Jump Sky</h3>
-                    <p>
-                        Meu primeiro site desenvolvido durante a graduação em Jogos Digitais.
-                        Um marco inicial que representa o começo da minha jornada no Front-End
-                        e a evolução que veio a partir dele.
-                    </p>
-                </a>
-            </div>
-
         </div>
     </section>
 
+
     <section id="teaching" class="teaching">
-        <h2 class="titulo_teaching">TEACHING</h2>
+        <div class="teaching-header brutal-header">
+            <span class="brutal-index">05</span>
+            <h2 class="brutal-title">TEACHING</h2>
+        </div>
+
+
 
         <div class="teaching-content">
 
@@ -272,34 +270,41 @@
 
                 <!-- VIDEO 1 -->
                 <div class="video-card">
-                    <video src="video/hex-glitch.mp4" autoplay muted loop playsinline></video>
-                    <h4>Hex Glitch Effect</h4>
-                    <p>
-                        Efeito visual animado criado com CSS e JavaScript.
-                        Ensino como trabalhar com keyframes, timing e sensação de glitch
-                        para criar interfaces mais expressivas.
-                    </p>
+                    <a href="https://www.youtube.com/shorts/DMuSho9GV-E" target="_blank" class="video-link">
+                        <video src="video/hex-glitch.mp4" autoplay muted loop playsinline></video>
+                        <h4>Hex Glitch Effect</h4>
+                        <p>
+                            Efeito visual animado criado com CSS e JavaScript.
+                            Ensino como trabalhar com keyframes, timing e sensação de glitch
+                            para criar interfaces mais expressivas.
+                        </p>
+                    </a>
                 </div>
 
                 <!-- VIDEO 2 -->
                 <div class="video-card">
-                    <video src="video/matrix-rain.mp4" autoplay muted loop playsinline></video>
-                    <h4>Matrix Rain Animation</h4>
-                    <p>
-                        Animação inspirada no efeito Matrix Rain usando canvas e JavaScript.
-                        O foco é lógica, performance e controle visual em tempo real.
-                    </p>
+                    <a href="https://www.youtube.com/shorts/fJvyhKFSof8" target="_blank" class="video-link">
+                        <video src="video/matrix-rain.mp4" autoplay muted loop playsinline></video>
+                        <h4>Matrix Rain Animation</h4>
+                        <p>
+                            Animação inspirada no efeito Matrix Rain usando canvas e JavaScript.
+                            O foco é lógica, performance e controle visual em tempo real.
+                        </p>
+                    </a>
                 </div>
 
                 <!-- VIDEO 3 -->
                 <div class="video-card">
-                    <video src="video/pulse-bars-loader.mp4" autoplay muted loop playsinline></video>
-                    <h4>Pulse Bars Loader</h4>
-                    <p>
-                        Loader animado utilizando apenas CSS.
-                        Um microprojeto ideal para entender animações, delays e ritmo visual.
-                    </p>
+                    <a href="https://www.youtube.com/shorts/GEjnxNzh0mU" target="_blank" class="video-link">
+                        <video src="video/pulse-bars-loader.mp4" autoplay muted loop playsinline></video>
+                        <h4>Pulse Bars Loader</h4>
+                        <p>
+                            Loader animado utilizando apenas CSS.
+                            Um microprojeto ideal para entender animações, delays e ritmo visual.
+                        </p>
+                    </a>
                 </div>
+
 
             </div>
 
@@ -315,168 +320,131 @@
 
 
     <section id="contatos" class="contatos">
-        <h2 class="titulo_contatos">CONTACT ME</h2>
-        <div class="contatos_links">
-            <div class="github">
-                <a href="https://github.com/Sants-Coder" target="_blank">GITHUB
-                    <img src="img/github-logo-24.png" data-nome="github" alt="GitHub">
-                </a>
-            </div>
-            <div class="whatsapp">
-                <a href="https://wa.me/5511940154926?text=Olá!%20Gostaria%20de%20mais%20informações."
-                    target="_blank">WHATSAPP
-                    <img src="img/whatsapp-logo-24.png" data-nome="whatsapp" alt="Whatsapp">
-                </a>
-            </div>
-            <div class="gmail">
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ha701430@gmail.com" target="_blank">GMAIL
-                    <img src="img/gmail-logo-24.png" data-nome="gmail" alt="Gmail">
-                </a>
-            </div>
-            <div class="linkedin">
-                <a href="https://www.linkedin.com/in/henrique-aguiar-269b89233/" target="_blank">LINKEDIN
-                    <img src="img/linkedin-logo-24.png" data-nome="linkedin" alt="LinkedIn">
-                </a>
-            </div>
-            <div class="linkedin">
-                <a href="https://www.youtube.com/@santscoder404" target="_blank">YOUTUBE
-                    <img src="img/youtube-logo-24.png" data-nome="youtube" alt="YouTube">
-                </a>
-            </div>
+
+        <div class="contatos-header brutal-header brutal-center">
+            <span class="brutal-index">06</span>
+            <h2 class="brutal-title">CONTACT</h2>
+            <span class="brutal-subtitle">Choose a channel</span>
         </div>
 
+        <div class="contatos-orbita">
+
+            <a class="contato github" href="https://github.com/Sants-Coder" target="_blank">
+                <img src="img/github-logo-24.png" alt="">
+                <span>GitHub</span>
+            </a>
+
+            <a class="contato whatsapp" href="https://wa.me/5511940154926" target="_blank">
+                <img src="img/whatsapp-logo-24.png" alt="">
+                <span>WhatsApp</span>
+            </a>
+
+            <a class="contato gmail" href="https://mail.google.com/mail/?view=cm&fs=1&to=ha701430@gmail.com"
+                target="_blank">
+                <img src="img/gmail-logo-24.png" alt="">
+                <span>Email</span>
+            </a>
+
+            <a class="contato linkedin" href="https://www.linkedin.com/in/henrique-aguiar-269b89233/" target="_blank">
+                <img src="img/linkedin-logo-24.png" alt="">
+                <span>LinkedIn</span>
+            </a>
+
+            <a class="contato youtube" href="https://www.youtube.com/@santscoder404" target="_blank">
+                <img src="img/youtube-logo-24.png" alt="">
+                <span>YouTube</span>
+            </a>
+
+        </div>
 
     </section>
 
     <footer class="rodape">
-        <div class="footer_container">
-            <h3 class="big_name">HENRIQUE</h3>
-            <div class="footer_navigate">
-                <h3>NAVIGATE</h3>
-                <ul class="navigate_list">
-                    <li>
-                        <a href="#inicio">HOME</a>
-                    </li>
-                    <li>
-                        <a href="#sobre">ABOUT</a>
-                    </li>
-                    <li>
-                        <a href="#projetos">PROJECTS</a>
-                    </li>
-                    <li>
-                        <a href="#teaching">TEACHING</a>
-                    </li>
-                    <li>
-                        <a href="#contatos">CONTACTS</a>
-                    </li>
+
+        <div class="footer-bg-name">HENRIQUE</div>
+
+        <div class="footer-container">
+
+            <div class="footer-column">
+                <h4>NAVIGATE</h4>
+                <ul>
+                    <li><a href="#inicio">HOME</a></li>
+                    <li><a href="#sobre">ABOUT</a></li>
+                    <li><a href="#projetos">PROJECTS</a></li>
+                    <li><a href="#teaching">TEACHING</a></li>
+                    <li><a href="#contatos">CONTACTS</a></li>
                     <li class="resume-link">
-                        <a href="resume.html">
-                            Resume
-                            <span class="arrow">↗</span>
-                        </a>
+                        <a href="resume.html">RESUME <span>↗</span></a>
                     </li>
                 </ul>
             </div>
 
-            <div class="footer_folow">
-                <h3>FOLOW</h3>
-                <ul class="folow_list">
-                    <li>
-                        <a href="https://www.linkedin.com/in/henrique-aguiar-269b89233/" target="_blank">LINKEDIN</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/Sants-Coder" target="_blank">GITHUB</a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/@santscoder404" target="_blank">YOUTUBE</a>
-                    </li>
-                    <li>
-                        <a href="https://www.tiktok.com/@santscoder404" target="_blank">TIKTOK</a>
-                    </li>
-
-                    <li>
-                        <a href="https://www.instagram.com/santscoder/" target="_blank">INSTAGRAM</a>
-                    </li>
+            <div class="footer-column">
+                <h4>FOLLOW</h4>
+                <ul>
+                    <li><a href="https://www.linkedin.com" target="_blank">LINKEDIN</a></li>
+                    <li><a href="https://github.com/Sants-Coder" target="_blank">GITHUB</a></li>
+                    <li><a href="https://www.youtube.com/@santscoder404" target="_blank">YOUTUBE</a></li>
+                    <li><a href="https://www.tiktok.com/@santscoder404" target="_blank">TIKTOK</a></li>
+                    <li><a href="https://www.instagram.com/santscoder/" target="_blank">INSTAGRAM</a></li>
                 </ul>
             </div>
 
-            <div class="footer_contact">
-                <h3>CONTACT</h3>
-                <ul class="contact_list">
+            <div class="footer-column">
+                <h4>CONTACT</h4>
+                <ul>
+                    <li><a href="#contatos">GET STARTED</a></li>
                     <li>
-                        <a href="#contatos">GET STARTED</a>
-                    </li>
-                    <li>
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ha701430@gmail.com&su=Assunto%20aqui&body=Escreva%20sua%20mensagem%20aqui"
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ha701430@gmail.com"
                             target="_blank">ha701430@gmail.com</a>
                     </li>
                 </ul>
             </div>
 
-            <div class="footer_direitos">
-                <p>CREATE WITH PASSION. INSPIRE WITH ART.</p>
-                <p>NO SHORTCUTS. JUST DEDICATION</p>
-                <p>© 2025, MADE BY HENRIQUE A</p>
-            </div>
-
         </div>
+
+        <div class="footer-bottom">
+            <p>CREATE WITH PASSION. INSPIRE WITH ART.</p>
+            <p>NO SHORTCUTS. JUST DEDICATION.</p>
+            <p>© 2025 — HENRIQUE A.</p>
+        </div>
+
     </footer>
 
+
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const textElement = document.querySelector(".descricao");
-            const text = "Desenvolvedor Front-End";
-            let index = 0;
 
-            function type() {
-                if (index < text.length) {
-                    textElement.textContent += text[index];
-                    index++;
-                    setTimeout(type, 100);
-                }
-            }
-            type();
+        const menuTrigger = document.getElementById('menuTrigger');
+        const menuOverlay = document.getElementById('menuOverlay');
+
+        menuTrigger.addEventListener('click', () => {
+            menuOverlay.classList.toggle('active');
         });
 
-        /*
-       (script de alteranar tematica)
-
-        const botao = document.getElementById('tematica');
-        const icone = document.getElementById('icone_tematica');
-        const body = document.body;
-
-        botao.addEventListener('click', () => {
-            body.classList.toggle('light');
-
-            const modoAtivo = body.classList.contains('light');
-
-            icone.src = modoAtivo
-                ? 'img/sun-regular-24.png'
-                : 'img/moon-solid-24.png';
-            icone.alt = modoAtivo ? 'modo escuro' : 'modo claro';
-
-            const iconesContato = document.querySelectorAll(".contatos_links img");
-
-            iconesContato.forEach((img) => {
-                const nome = img.dataset.nome;
-                img.src = modoAtivo
-                    ? `img/${nome}-logo-24-black.png`
-                    : `img/${nome}-logo-24.png`;
-            });
-        });
-        */
-
-        const toggleMenu = document.getElementById('menu-toggle');
-        const menu = document.getElementById('menu_lateral');
-
-        toggleMenu.addEventListener('click', () => {
-            menu.classList.toggle('ativo');
-        });
-        document.querySelectorAll('#menu_lateral a').forEach(link => {
+        menuOverlay.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
-                menu.classList.remove('ativo');
+                menuOverlay.classList.remove('active');
             });
         });
+
+
+
+        const section = document.querySelector('.projetos');
+        const track = document.querySelector('.projetos-track');
+
+        window.addEventListener('scroll', () => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+            const scrollY = window.scrollY;
+
+            const progress = (scrollY - sectionTop) / (sectionHeight - window.innerHeight);
+
+            if (progress >= 0 && progress <= 1) {
+                const maxTranslate = track.scrollWidth - window.innerWidth;
+                track.style.transform = `translateX(${-maxTranslate * progress}px)`;
+            }
+        });
+
     </script>
 
 
